@@ -8,7 +8,7 @@ if [ "$USER" != "root" ]; then
 	echo "Please re-run this installer as the root user."
 	exit 1
 fi
-deb_ver=$(cat /etc/debian_version | grep "^[9]..")
+deb_ver=$(cat /etc/debian_version | grep "^[11]..")
 if [ -z "$deb_ver" ]; then
 	echo "Our records show that your operating system is either too old or not Debian based. Installation will not proceed."
 	exit 2
